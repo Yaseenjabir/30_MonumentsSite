@@ -98,14 +98,14 @@ export default function MainComp() {
                     className="w-full mx-auto"
                   />
                   <div className="flex justify-between w-full gap-1 mt-3 md:mt-5 items-center">
-                    <span className="opacity-0">hide</span>
+                    <span className="opacity-0"></span>
                     <h1
                       className="text-xl text-center max-w-[275px]"
                       style={{ fontFamily: "Montserrat", fontWeight: 600 }}
                     >
                       {item.title.toUpperCase()}
                     </h1>
-                    <div className="relative ml-10 w-[30px]">
+                    <div className="relative w-[30px]">
                       <img
                         className="w-full"
                         src="https://www.jasonrevok.com/wp-content/themes/revok/assets/img/images-count.svg"
