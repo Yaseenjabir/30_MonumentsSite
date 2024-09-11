@@ -238,7 +238,7 @@ export default function Profile() {
                 </div>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-1">
+            <AccordionItem value="item-2">
               <AccordionTrigger
                 style={{ fontFamily: "Montserrat" }}
                 className="text-[23px] font-semibold"
