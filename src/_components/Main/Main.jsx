@@ -54,19 +54,19 @@ export default function MainComp() {
 
   const [entranceAnimate, setEntranceAnimate] = useState(true);
 
-  // useEffect(() => {
-  //   const entranceTimer = setTimeout(() => {
-  //     setEntranceAnimate(false);
-  //   }, 4000);
-  //   const renderAnimateTimer = setTimeout(() => {
-  //     setShowAnimateOnRender(true);
-  //   }, 2900);
+  useEffect(() => {
+    const entranceTimer = setTimeout(() => {
+      setEntranceAnimate(false);
+    }, 4000);
+    const renderAnimateTimer = setTimeout(() => {
+      setShowAnimateOnRender(true);
+    }, 2900);
 
-  //   return () => {
-  //     clearTimeout(entranceTimer);
-  //     clearTimeout(renderAnimateTimer);
-  //   };
-  // }, []);
+    return () => {
+      clearTimeout(entranceTimer);
+      clearTimeout(renderAnimateTimer);
+    };
+  }, []);
 
   function handleNavigation(link) {
     setCloseAnimation(true);
