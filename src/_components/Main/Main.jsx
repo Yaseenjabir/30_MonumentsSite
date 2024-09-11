@@ -57,10 +57,10 @@ export default function MainComp() {
   useEffect(() => {
     const entranceTimer = setTimeout(() => {
       setEntranceAnimate(false);
-    }, 4000);
+    }, 4200);
     const renderAnimateTimer = setTimeout(() => {
       setShowAnimateOnRender(true);
-    }, 2900);
+    }, 2500);
 
     return () => {
       clearTimeout(entranceTimer);
@@ -98,9 +98,9 @@ export default function MainComp() {
                     className="w-full mx-auto"
                   />
                   <div className="flex justify-between w-full gap-1 mt-3 md:mt-5 items-center">
-                    <span className="opacity-0">Hidden</span>
+                    <span className="opacity-0">hide</span>
                     <h1
-                      className="text-xl text-center"
+                      className="text-xl text-center max-w-[275px]"
                       style={{ fontFamily: "Montserrat", fontWeight: 600 }}
                     >
                       {item.title.toUpperCase()}
